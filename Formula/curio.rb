@@ -5,13 +5,13 @@
 class Curio < Formula
   desc "Personal context layer built from your bookmarks — hybrid BM25 + vector search"
   homepage "https://github.com/samsar/curio"
-  version "0.1.0"
+  version "0.2.0"
   license "Apache-2.0"
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/samsar/curio/releases/download/v0.1.0/curio_darwin_arm64.tar.gz"
-    sha256 "a6ddb6c9cbea68e24cdd4d97c2e7400198e7e3d1e05bcbe66c0935881a717dfb"
+    url "https://github.com/samsar/curio/releases/download/v0.2.0/curio_darwin_arm64.tar.gz"
+    sha256 "2d20e06b32c50fc69e5a861cacac93564693f2b3b356ea6d2d55b6df62eddea6"
 
     define_method(:install) do
       bin.install "curio"
