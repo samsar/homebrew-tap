@@ -5,21 +5,21 @@
 class GitRepos < Formula
   desc "Scan a directory of git repos and show status at a glance"
   homepage "https://github.com/samsar/git-repos"
-  version "1.1.7"
+  version "1.1.8"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/samsar/git-repos/releases/download/v1.1.7/git-repos_darwin_amd64.tar.gz"
-      sha256 "cc9f23d4de27b17612964ff4db14d77ec5815a3796b3509e7e0e4f365c741f28"
+      url "https://github.com/samsar/git-repos/releases/download/v1.1.8/git-repos_darwin_amd64.tar.gz"
+      sha256 "af58513d70b2592ea777b5c66cc0776a3413693e945f3531a83171304851abcf"
 
       define_method(:install) do
         bin.install "git-repos"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/samsar/git-repos/releases/download/v1.1.7/git-repos_darwin_arm64.tar.gz"
-      sha256 "24aa925bde25e084602cb431bef65c183734f9e7dc1ba03c785c5e3a0ce341b9"
+      url "https://github.com/samsar/git-repos/releases/download/v1.1.8/git-repos_darwin_arm64.tar.gz"
+      sha256 "df89346cae82184a729c8eff6f49d6b3cf4b666d2cb1e06b9c9209fa549d3fb3"
 
       define_method(:install) do
         bin.install "git-repos"
@@ -29,15 +29,15 @@ class GitRepos < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/samsar/git-repos/releases/download/v1.1.7/git-repos_linux_amd64.tar.gz"
-      sha256 "5b026982a923f194c41f1087b708d44c0de659c306fccd0b56a25b0c9208e7e4"
+      url "https://github.com/samsar/git-repos/releases/download/v1.1.8/git-repos_linux_amd64.tar.gz"
+      sha256 "f5a5063233bdd57c28ddaaf709b40d0bf189df191c1f1c658f546abfcf99b2e1"
       define_method(:install) do
         bin.install "git-repos"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/samsar/git-repos/releases/download/v1.1.7/git-repos_linux_arm64.tar.gz"
-      sha256 "296f8fa1d137d2d9414dad76363f536f5dda5f9c47680221aab62dba8081b582"
+      url "https://github.com/samsar/git-repos/releases/download/v1.1.8/git-repos_linux_arm64.tar.gz"
+      sha256 "07fd948a9911df3bd6534b573f5439db2ee7bd344bb4ad8d48efa4e275192cb5"
       define_method(:install) do
         bin.install "git-repos"
       end
