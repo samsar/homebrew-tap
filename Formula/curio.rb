@@ -5,13 +5,13 @@
 class Curio < Formula
   desc "Search everything you've bookmarked, locally, and let your AI tools use it"
   homepage "https://github.com/samsar/curio"
-  version "2.1.0"
+  version "2.2.0"
   license "Apache-2.0"
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/samsar/curio/releases/download/v2.1.0/curio_darwin_arm64.tar.gz"
-    sha256 "17b91eabe44b5591cf1573dcd9a1cb5058909c5058b7917b3cb7591a478da942"
+    url "https://github.com/samsar/curio/releases/download/v2.2.0/curio_darwin_arm64.tar.gz"
+    sha256 "4dbbdc7ea883d38b4e5924eed9d34452a21e550b3f16798099ef9cd564c0e55d"
 
     define_method(:install) do
       bin.install "curio"
