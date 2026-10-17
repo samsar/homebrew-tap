@@ -11,7 +11,7 @@ class GitRepos < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/samsar/git-repos/releases/download/v1.2.1/git-repos_darwin_amd64.tar.gz"
-      sha256 "928179d7017f9f45f21c836e12aaca1238cfb56eabfa4c0ce3721c7830455a3f"
+      sha256 "cad66077f070bfab4c6a39ae1eb7e4796bf3902383540d7b8a9b8e16eab91317"
 
       define_method(:install) do
         bin.install "git-repos"
@@ -19,7 +19,7 @@ class GitRepos < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/samsar/git-repos/releases/download/v1.2.1/git-repos_darwin_arm64.tar.gz"
-      sha256 "b1e73c5fe7913c5e21521b1f743c4f14281545d924d587ac983f50d0fb16c1e1"
+      sha256 "be49761b543516e0e660b482a6061c0eca009da45fbeb728a0e8f1385596135f"
 
       define_method(:install) do
         bin.install "git-repos"
@@ -30,14 +30,14 @@ class GitRepos < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/samsar/git-repos/releases/download/v1.2.1/git-repos_linux_amd64.tar.gz"
-      sha256 "3616ff11a2619b68a294d45820325bba8a58322509321e93b3342035aa016c87"
+      sha256 "038e76c70baf05ac2725953b8e50ce2eb779ec526f3948ecd91393b669674bec"
       define_method(:install) do
         bin.install "git-repos"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/samsar/git-repos/releases/download/v1.2.1/git-repos_linux_arm64.tar.gz"
-      sha256 "3409a2438e7f967742d9b40eaf1919c59b9306bf96a6e19de2639750aca6f857"
+      sha256 "00199f4950402c1a1d5564f588be354bbe9299cc2592ff795dfad71a56090f80"
       define_method(:install) do
         bin.install "git-repos"
       end
